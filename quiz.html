@@ -4,26 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz_Website</title>
+<script>function handleSubheadingClick(index) {
+  const imageContainers = document.querySelectorAll('.image-zoom');
+  const imageToClick = imageContainers[index].querySelector('img');
+
+  imageToClick.click();
+}</script>
     <link rel="stylesheet" href="quiz.css">
+    <script src="https://kit.fontawesome.com/34c72b61f3.js" crossorigin="anonymous"></script>
+   
+    <script scr="quiz.js"></script>
 </head>
 <body> 
-    <header>
-    <h1> <strong>QUIZZY</strong> </h1>
+    <h1>QUIZZY</h1>
     <nav> 
-        <ul> 
-            <li><a href="#playlist" class="active">Playlist</a>
-          <li><a href="#feedback">Feedback</a></div>
-          <li><a href="#help">Help</a></div>
-          <li><a href="#languaue">Language</a></div>
-          <li><a href="#signup">Sign Up</a></div>
-          <li><a href="#login">Log In</a></div>
-        </ul>
+         
+          <a href="#" class="active">Playlist</a>
+          <a href="#">Create</a>
+          <a href="#">Feedback</a>
+          <a href="#">Help</a>
+          <a href="#">Language</a>
+          <a href="#">Log In</a>
       </nav>
-    </header>
-
     <h2>New Feature Involve !</h2>
     <h3>Create Quizzez</h3>
     <h4> Quizzy is web based audiences platform for hosting interactive quizzes. It can be played individually or in team. No need to install any app. </h4>
-      <button>Try Now</button>
-</body>
-</html>
+ <img src="WhatsApp_Image_2023-06-10_at_12.14.27-removebg-preview (1).png" alt="Error" >
+    <button class="button1">Try Now</button>
+    <button class="button2">Sign Up</button>
+    <h5><b>Learn what Quizzy can do for you?</b></h5>
+    <h6><b>Feature you  should  know  about  Quizzy !</b></h6>
+ <div class="container">
+      <i class="fa-solid fa-circle-play fa-2xl" style="color: #fbfcfe;"></i>
+      <i class="fa-solid fa-comment-dots fa-2xl" style="color: #f4f5f6;"></i>
+      <i class="fa-solid fa-circle-question fa-2xl" style="color: #fcfcfd;"></i>
+      <i class="fa-sharp fa-solid fa-globe fa-2xl" style="color: #f1f4f8;"></i>
+  </div>
+     <div class="image-container">
+      <div class="upper-row">
+        <div class="image-zoom">
+          <img src="p.jpg" alt="Image 1">
+          <p class="subheading" onclick="handleSubheadingClick(0)">Education/e-learning</p>
+        </div>
+        <div class="image-zoom">
+          <img src="1900701_Blog_Feature_Teamwork.jpg" alt="Image 2">
+          <p class="subheading3" onclick="handleSubheadingClick(1)">Team Work</p>
+        </div>
+        <div class="image-zoom">
+          <img src="n.jpg" alt="Image 3">
+          <p class="subheading1" onclick="handleSubheadingClick(2)">Lead Generation</p>
+        </div>
+      </div>
+      <div class="lower-row">
+        <div class="image-zoom">
+          <img src="ph.webp" alt="Image 4">
+          <p class="subheading2" onclick="handleSubheadingClick(3)">Include And Engage Student</p>
+        </div>
+        <div class="image-zoom">
+          <img src="ch.jpg" alt="Image 5">
+          <p class="subheading4" onclick="handleSubheadingClick(4)">Quickly Find Or Create</p>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+
+    <p class="various">Various  Question  Types  </p>
+    <div class="image1">
+      <img src="adaptive-learning.png" alt="Image"> 
+ </div>
+ <div class="star-container">
+  <div class="star-text"> 
+    <p>Multiple choice questions, True/False, Poll type, create quiz into rounds and different levels.</p>
+  </div>
+  <span class="star">&#9733;</span>
+</div>
+
+    <p class="Monitor">Monitor  Individual  Performance  </p>
+    <div class="image2">
+      <img src="monitor-individual-performance.jpg" alt="Image"> 
+ </div>
+ <div class="star-container2">
+  <div class="star-text2"> 
+    <p>Show  each individual performance and have record of performance.</p>
+  </div>
+  <span class="star">&#9733;</span>
+</div>
+
+    <p class="Level"> Level  Wise  Questions </p>
+    <div class="image3">
+      <img src="0_vSZd35bvebwn_7h6.png" alt="Image"> 
+ </div>
+ <div class="star-container3">
+  <div class="star-text3"> 
+    <p>You will get questions of every type of level and individual can choose itself.</p>
+  </div>
+  <span class="star">&#9733;</span>
+</div>
+
+    <p class="Adaptive">Adaptive Learning And Practice   </p>
+    <div class="image4">
+      <img src="Your paragraph text.jpg" alt="Image"> 
+ </div>
+ <div class="star-container4">
+  <div class="star-text4"> 
+    <p>Individual learn things that they never learn and they will try to imagine.</p>
+  </div>
+  <span class="star">&#9733;</span>
+</div>
+
+    <script src="quiz.js"></script>
+    </body>
+    </html>
