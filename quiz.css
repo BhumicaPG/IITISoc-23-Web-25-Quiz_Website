@@ -1,7 +1,7 @@
 
     body{ 
     background-color: #201f1f;
-    
+   
     }  
 
     
@@ -10,13 +10,15 @@
 h1 {
     width:100%;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%,0);
+    left: 7px;
+    /* transform: translate(-50%,0); */
     display:flex;
     justify-content: space-between;
     height:85px;
     line-height: 52px;
     top: 27px;
+    font-family: 'David Libre';
+    
     
 }
      
@@ -33,7 +35,117 @@ margin-top: 2.3px;
 
 }
 
-nav{ 
+#navigation {
+  position: relative;
+  display: flex;
+  /* justify-content: space-around; */
+  /* margin: auto; */
+  /* width: 40%; */
+  left: 60px;
+  top: -20pxpx;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 32px;
+  color: #d9dedf;
+}
+
+.nav-link:hover {
+  color: #d4d729;
+}
+
+
+.navbar {
+  padding: 0 0 6rem;
+  
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 35px;
+  font-weight: bold;
+  
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-family: "Montserrat";
+ 
+}
+
+.nav-item {
+  padding: 1% 2%;
+  font-size: small;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  font-size: 35px;
+  color: #d9dedf;
+  padding: 0 px;
+   left: 420px;  
+  top: 15px;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  background-color: #d4d729;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -20px;
+}
+
+a:hover {
+  color: #d4d729;
+}
+
+a:hover:after {
+  width: 100%;
+} 
+
+
+
+
+/* .navbar{
+  padding: 0 0 6rem ;
+  
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 32px; 
+   font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1.7rem;
+  font-family: "Montserrat";  
+}
+
+.nav-item{
+  padding: 1% 3%;
+  font-size: small;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+ .navigation{ 
     height: 85px;
     width: 65vw;
     display: flex;
@@ -42,17 +154,17 @@ nav{
     margin: auto;
     left: 520px;
 
-}
-
-a{
+} 
+ 
+ a{
    position: relative; 
     text-decoration: none;
-    /* font-family:'poppins' ; */
+    /* font-family:'poppins' ; *
     font-size: 32px;
     color: #d9dedf;
     padding: 0 px;
     left: 220px;
-    top:-18px ;
+    top:-18px ; 
 
 }
 a:after{
@@ -72,23 +184,23 @@ a:hover:after{
     width:100%
 }
 
-
+ */
 
 
 
     
     h2{
         position: absolute;
-    width: 541.89px;
-    height: 91.34px;
+    width: 100%;
+    height: 100.34px;
     left: 48px;
-    top: 122px;
+    top: 182px;
     
     font-family: 'David Libre';
     font-style: normal;
     font-weight: 700;
-    font-size: 52px;
-    line-height: 50px;
+    font-size: 55px;
+    line-height: 10px;
     /* /* or 104%  */
     
     
@@ -102,7 +214,7 @@ color: #d4d729;
 width: 360.54px;
 height: 53.79px;
 left: 48px;
-top: 186px;
+top: 226px;
 
 font-family: 'David Libre';
 font-style: normal;
@@ -159,6 +271,29 @@ color: #f4f1f1;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
   }
+
+  .button3 {
+    position: absolute;
+    width: 130px;
+    height: 42px;
+    padding: 8px 16px;
+    top: 40px;
+    left: 1120px;
+    font-family: 'David Libre', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #db1fb3;
+    background-color: #fff;
+    border: 2px solid #db1fb3;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .button3:hover {
+    background-color: #db1fb3;
+    color: #fff;
+  }
   
   .button1:hover {
     background-color: #db1fb3;
@@ -195,7 +330,7 @@ color: #f4f1f1;
 width: 645px;
 height: 400px;
 left: 350px;
-top: 550px;
+top: 560px;
 position: relative;
 font-family: 'David Libre';
 font-style: normal;
@@ -223,7 +358,7 @@ transform: rotate(-0.86deg);
     position: relative;
     width: 400px;
     height: 250px;
-    top: 200px;
+    top: 2050px;
     left: 15px;
     list-style-image: inherit;
    }  
@@ -231,7 +366,7 @@ transform: rotate(-0.86deg);
   position: relative;
     width: 400px;
     height: 250px;
-    top: 300px; 
+    top: 2160px; 
     left: 48px;
  }   
  
@@ -273,45 +408,45 @@ transform: rotate(-0.86deg);
   }
 
   .subheading {
-    margin-top: 210px;
+    margin-top: 2070px;
     font-size: 34px;
     color: #d9dedf;
-    margin-left: 48px;
-    
+    text-align: center;
+    font-family: 'David Libre';
   }
   
   .subheading2 {
-    margin-top: 315px;
+    margin-top: 2170px;
     font-size: 34px;
     color: #d9dedf;
-    margin-left: 90px;
-  
+    text-align: center;
+    font-family: 'David Libre';
     
   }
 
   .subheading1 {
-    margin-top: 210px;
+    margin-top: 2070px;
     font-size: 34px;
     color: #d9dedf;
-    margin-left: 90px;
-    
+    text-align: center;
+    font-family: 'David Libre';
   }
 
   .subheading3 {
-    margin-top: 210px;
+    margin-top: 2070px;
     font-size: 34px;
     color: #d9dedf;
-    margin-left: 90px;
-    
+    text-align: center;
+    font-family: 'David Libre';
   }
 
 
   .subheading4 {
-    margin-top: 315px;
+    margin-top: 2170px;
     font-size: 34px;
     color: #d9dedf;
-    margin-left: 90px;
-    
+    text-align: center;
+    font-family: 'David Libre';
   
     
   } 
@@ -363,10 +498,10 @@ transform: rotate(-0.86deg);
 
 h6{
   position: absolute;
-width: 1186px;
+width: 786px;
 height: 86px;
 left: 280px;
-top: 1560px;
+top: 1380px;
 
 font-family: 'David Libre';
 font-style: normal;
@@ -380,16 +515,16 @@ color: #d4d729;
 
 .various{
   position: absolute;
-width: 390px;
+width: 455px;
 height: 25px;
 left: 45px;
-top: 1720px;
-padding: 20px;
+top: 1480px;
+padding: 30px;
 font-family: 'David Libre';
 font-style: normal;
 font-weight: 600;
 font-size: 38px;
-line-height: 25px;
+line-height: 0px;
 color: rgb(246, 249, 249);
 background:#db1fb3 ;
 border-radius: 60px;
@@ -404,7 +539,7 @@ img {
 
 .image1 img {
   position: absolute;
-  top: 1750px;
+  top: 1480px;
   left: 690px;
   width: 440px; 
     height: auto;
@@ -416,13 +551,14 @@ img {
   font-size :30px; 
   width: 390px;
   left: 45px;
-  top: 175px; 
+  top: 200px; 
+  font-family: 'David Libre';
 }
 
 .star-container {
   position: relative;
   left: 65px;
-  top: 530px;
+  top: 880px;
 }
 
 .star {
@@ -442,7 +578,7 @@ img {
  .star-container2{
   position: relative;
   left: 695px;
-  top: 830px;
+  top: 1200px;
  }
 .star-text2{
   position:relative;
@@ -451,12 +587,13 @@ img {
   width: 410px;
   left: 45px;
   top: 145px; 
+  font-family: 'David Libre';
 }
 
 .star-container3{
   position: relative;
   left: 50px;
-  top: 1110px;
+  top: 1440px;
  }
 .star-text3{
   position:relative;
@@ -464,13 +601,14 @@ img {
   font-size :30px; 
   width: 350px;
   left: 45px;
-  top: 140px; 
+  top: 155px; 
+  font-family: 'David Libre';
 }
 
 .star-container4{
   position: relative;
   left: 695px;
-  top: 1320px;
+  top: 1670px;
  }
 .star-text4{
   position:relative;
@@ -478,23 +616,24 @@ img {
   font-size :30px; 
   width: 400px;
   left: 45px;
-  top: 140px; 
+  top: 150px; 
+  font-family: 'David Libre';
 }
 
 
 
 .Monitor{
   position: absolute;
-width: 535px;
+width: 595px;
 height: 25px;
-left: 675px;
-top: 2150px;
-padding: 20px;
+left: 665px;
+top: 1930px;
+padding: 30px;
 font-family: 'David Libre';
 font-style: normal;
 font-weight: 600;
 font-size: 38px;
-line-height: 25px;
+line-height: 0px;
 color: rgb(246, 249, 249);
 background:#db1fb3 ;
 border-radius: 60px;
@@ -508,7 +647,7 @@ img {
 
 .image2 img {
   position: absolute;
-  top: 2195px;
+  top: 1930px;
   left: 45px;
   width: 550px; 
     height: auto;
@@ -516,16 +655,16 @@ img {
 
 .Level{
   position: absolute;
-width: 348px;
+width: 408px;
 height: 25px;
 left: 45px;
-top: 2555px;
-padding: 20px;
+top: 2330px;
+padding: 30px;
 font-family: 'David Libre';
 font-style: normal;
 font-weight: 600;
 font-size: 38px;
-line-height: 25px;
+line-height: 0;
 color: rgb(246, 249, 249);
 background:#db1fb3 ;
 border-radius: 60px;
@@ -540,7 +679,7 @@ img {
 
 .image3 img  {
   position: absolute;
-  top: 2570px;
+  top: 2320px;
   left: 670px;
   width: 570px; 
     height: auto;
@@ -550,19 +689,20 @@ img {
 
 
 .Adaptive{position: absolute;
-  width: 535px;
+  width: 595px;
   height: 25px;
   left: 675px;
-  top: 2910px;
-  padding: 20px;
+  top: 2700px;
+  padding: 30px;
   font-family: 'David Libre';
   font-style: normal;
   font-weight: 600;
   font-size: 38px;
-  line-height: 25px;
+  line-height: 0;
   color: rgb(246, 249, 249);
   background:#db1fb3 ;
   border-radius: 60px;
+  font-family: 'David Libre';
   }  
 
   img {
@@ -574,13 +714,180 @@ img {
 
   .image4 img  {
     position: absolute;
-    top: 2960px;
+    top: 2700px;
     left: 69px;
     width: 550px; 
       height: auto;
       
   }
 
+.topics{
+  position: relative;
+width: 1186px;
+height: 86px;
+left: 380px;
+top: 2000px;
+
+
+font-family: 'David Libre';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 53px;
+
+color: #d4d729;
+}
+
+ .carousel-container{
+  position: absolute;
+width: 1186px;
+height: 686px;
+left: 380px;
+top: 3600px;
+ }
+/*  
+.carousel-container {
+  position: absolute;
+  width: 1186px;
+  height: 686px;
+  left: 380px;
+  top: 3600px;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel-caption h3 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  color: #fff;
+} */
+
+/* .h7{
+  position: inherit;
+  top: 400px;
+} */
 
 
 
+
+ #testimonials{
+  position: absolute;
+  
+  
+  background-color: #8cafce;
+  top: 730px;
+  width: 1300px;
+  height: 600px;
+}
+
+.carousel-item{
+  padding: 7% 15%;
+  position: relative;
+
+}
+.testimonial-img{
+  position: relative;
+  width: 600px;
+  height:450px;
+  left: -100px;
+  top:-40px ;
+  /* border-radius: 100%; */
+  margin:20px ;   
+}
+
+
+
+
+
+#press{
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%; 
+}
+
+.press-logo{
+  width: 15%;
+  margin:20px 20px 50px;
+ }
+
+@media (max-width:1028px){
+
+  .title-img{
+      position: static;
+      transform: rotate(0);
+  }
+} 
+
+
+
+#cta{
+  text-align: center; 
+  padding: 7% 15%;
+}
+
+.head-cta{
+  /* font-family: "Montserrat"; */
+  font-weight: 700px;
+  color: white;
+  font-size: 3.5rem;
+  line-height: 1.5;
+} 
+ 
+
+
+ /* .carousel-item {
+  padding: 7% 15%;
+  position: relative; /* Add this line *
+}
+
+.testimonial-img {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  left: auto;
+  top: -60px;
+  margin: 20px;
+}
+
+.carousel-item h7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: revert; /* Remove the inline style *
+} */
+
+
+em { 
+  position: absolute;
+  font-size: 3rem;
+  color: #d4d729;
+  font-family: 'David Libre';
+  left: 750px;
+  top: 300px;
+ 
+}
+em2{
+  position: absolute;
+  font-size: 3rem;
+  color: #d4d729;
+  font-family: 'David Libre';
+  left: 850px;
+  top: 350px;
+
+}
