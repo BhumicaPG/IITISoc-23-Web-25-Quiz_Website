@@ -3,19 +3,11 @@
 const quizData = [
     {
       question: "Q1:  1.With Which of the following sports M Vijayakrishna Memorial Cup is related to?",
-    //    3.Who is the IOC Coordination Commission Tokyo 2020?
-    //   [A] Kirsty Coventry[B] Ban Ki-moon[C] John Coates[D] Barry Maister
-      
-    //    4.Which of the following wrestling styles is part of the Olympics?
-    //   [A] Greco-Roman wrestling[B] Men’s freestyle wrestling[C] Women’s freestyle wrestling[D] All of the above
-      
-    //    5.Who has composed the FIFA anthem?
-    //   [A] Rob May[B] Simon Hill[C] Franz Lambert[D] All of the above",
-      option1: " Badminton",
+       option1: " Badminton",
       option2: "Table Tennis",
       option3: "Horse Races",
       option4: "Polo",
-      correctAnswer: "ans1",
+      correctAnswer: "ans3",
     },
     {
       question: "Q2: Which among the following sporting event has become the first ever to be broadcast live on the popular video sharing website YouTube?",
@@ -26,19 +18,28 @@ const quizData = [
       correctAnswer: "ans3",
     },
     {
-      question: "Q3: Apart from <b> tag, what other tag makes text bold?",
-      option1: "<fat>",
-      option2: "<strong>",
-      option3: "<black>",
-      option4: "<emp>",
-      correctAnswer: "ans2",
+      question: "Q3:Who is the IOC Coordination Commission Tokyo 2020?",
+      option1: "Kirsty Coventry",
+      option2: "Ban Ki-moon",
+      option3: "John Coates",
+      option4: "Barry Maister",
+      correctAnswer: "ans3",
     },
     {
       question:
-        "Q4: Which of the following is correct about features of JavaScript?",
-      option1: "Javascript is complementary to and integrated with HTML.",
-      option2: "Javascript is open and cross platform.",
-      option3: "Both of the above",
+        "Q4: Which of the following wrestling styles is part of the Olympics?",
+      option1: "Greco-Roman wrestling",
+      option2: "Men's freestyle wrestling",
+      option3: "Women's freestyle wrestling",
+      option4: "All of the above",
+      correctAnswer: "ans4",
+    },
+    {
+      question:
+        "Q5: Which of the following wrestling styles is part of the Olympics?",
+      option1: "Rob May",
+      option2: "Simon Hill",
+      option3: "Franz Lambert",
       option4: "All of the above",
       correctAnswer: "ans3",
     },
