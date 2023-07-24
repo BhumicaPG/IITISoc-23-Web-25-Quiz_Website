@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>#options {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      
+      #options a {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      #options a:last-child {
+        margin-bottom: 0;
+      }
+      </style>
+ </head>
+ <body>
+    <button id="levelButton">Level</button>
+
+<div id="options">
+  <a href="#" id="highOption">High</a>
+  <a href="#" id="mediumOption">Medium</a>
+  <a href="#" id="lowOption">Low</a>
+</div>
+
+<script>const levelButton = document.getElementById('levelButton');
+    const options = document.getElementById('options');
+    
+    levelButton.addEventListener('click', function() {
+      options.style.display = 'block';
+    });
+    
+    document.addEventListener('click', function(event) {
+      if (!options.contains(event.target) && event.target !== levelButton) {
+        options.style.display = 'none';
+      }
+    });
+    
+    document.getElementById('highOption').addEventListener('click', function() {
+      window.location.href = 'high-quiz.html';
+    });
+    
+    document.getElementById('mediumOption').addEventListener('click', function() {
+      window.location.href = 'medium-quiz.html';
+    });
+    
+    document.getElementById('lowOption').addEventListener('click', function() {
+      window.location.href = 'low-quiz.html';
+    });
+    
+    </script>
+ </body>
+ </html>

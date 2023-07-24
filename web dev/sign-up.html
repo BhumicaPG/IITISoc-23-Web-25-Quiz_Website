@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="signup.css">
+<style> 
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'David Libre';
+    box-sizing: border-box;
+}
+ img{
+    position: relative;
+    width:1270px;
+    height:100vh;
+    
+    /* background-image: url(https://images.pexels.com/photos/1036936/pexels-photo-1036936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
+    background-position: center;
+    background-size: cover ;
+    
+
+}
+ .form-box{
+    width:90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+ }
+ .form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color:#3c00a0;
+    position:relative;
+
+ }
+ .form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+
+ .input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display:flex;
+    align-items: center;
+ }
+
+ input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+ }
+ .input-field i{
+    margin-left:15px ;
+    color: #999;
+ }
+ form button{ 
+    
+    position: relative;
+    top:25px;
+    left:10px;
+    width: 200px;
+    height: 50px;
+    padding:15px;
+    border-radius: 30px;
+
+
+font-weight: 600;
+font-size: 20px;
+line-height: 20px;
+/* or 125% */
+
+background-color: #0e0627;;
+color: #ebf3f5;
+ } </style>
+
+<script src="https://kit.fontawesome.com/34c72b61f3.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+    <img src="background 2.jpg" alt="image" srcset="">
+    <div class="container">
+        <div class="form-box">
+            <h1>Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="name" required placeholder="name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="Email" required placeholder="email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" required placeholder="password">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-duotone fa-lock"></i>
+                        <input tyoe="Confirm-password" name="Confirm-password" required placeholder="Confirm password">
+                    </div>
+                 </div>
+                 <div class="btn-field">
+                    <button type="button" id="forward buttton">
+                       Sign Up
+                    </button>
+                </div>   
+            </form>  
+        </div>  
+    </div>
+    
+</body>
+</html>

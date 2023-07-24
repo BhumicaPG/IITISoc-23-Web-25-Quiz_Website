@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>
+        <input type="radio" name="level" value="high"> High
+      </label>
+      <label>
+        <input type="radio" name="level" value="medium"> Medium
+      </label>
+      <label>
+        <input type="radio" name="level" value="low"> Low
+      </label>
+      <input type="submit" value="Start Quiz">
+    </form>
+     <script>document.getElementById('quizForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+      
+        const level = document.querySelector('input[name="level"]:checked').value;
+      
+        if (level === 'high') {
+          window.location.href = 'high-quiz.html';
+        } else if (level === 'medium') {
+          window.location.href = 'medium-quiz.html';
+        } else if (level === 'low') {
+          window.location.href = 'low-quiz.html';
+        }
+      });
+      </script>
+</body>
+
+    

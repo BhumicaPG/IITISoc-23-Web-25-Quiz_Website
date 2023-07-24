@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>Request has expired.</Message>
+  <RequestId>6496DEE44C8B373030D3BC20</RequestId>
+  <HostId>picwishhk.oss-cn-hongkong.aliyuncs.com</HostId>
+  <Expires>2023-06-24T11:59:30.000Z</Expires>
+  <ServerTime>2023-06-24T12:17:40.000Z</ServerTime>
+  <EC>0002-00000069</EC>
+</Error>

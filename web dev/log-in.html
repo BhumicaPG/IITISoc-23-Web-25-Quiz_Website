@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+  </style>
+  <script src="https://kit.fontawesome.com/34c72b61f3.js" crossorigin="anonymous"></script>
+
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: 'David Libre';
+    box-sizing: border-box;
+}
+
+img{
+    position: relative;
+    width:1270px;
+    height:100vh;
+    
+    /* background-image: url(https://images.pexels.com/photos/1036936/pexels-photo-1036936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
+    background-position: center;
+    background-size: cover ;
+    
+
+}
+
+/* .container{
+    width:100%;
+    height:100vh;
+    background-image: url(https://png.pngtree.com/background/20210715/original/pngtree-blue-background-design-vol-03-picture-image_1277296.jpg);
+    background-position: center;
+    background-size: cover ;
+    position: relative;
+
+} */
+ .form-box{
+    width:90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+ }
+ .form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color:#3c00a0;
+    position:relative;
+
+ }
+ .form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+
+ .input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display:flex;
+    align-items: center;
+ }
+
+ input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+ }
+ .input-field i{
+    margin-left:15px ;
+    color: #999;
+ }
+
+ form p{
+    text-align: left;
+    font-size: 13px;
+ }
+ form p a{
+    text-decoration: none;
+    color: #3c00a0;
+ }
+
+ form button{ 
+    
+    position: relative;
+    top:35px;
+    left:10px;
+    width: 200px;
+    height: 50px;
+    padding:15px;
+    border-radius: 30px;
+
+
+font-weight: 600;
+font-size: 20px;
+line-height: 20px;
+/* or 125% */
+
+background-color: #3c00a0;;
+color: #ebf3f5;
+ } 
+   </style>
+    <script src="https://kit.fontawesome.com/34c72b61f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="background 2.jpg" alt="image" srcset="">
+   <div class="container">
+    <div class="form-box">
+        <h1>Log In</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="name" required placeholder="name">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="Email" required placeholder="email">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" required placeholder="password">
+                </div>
+                <p>
+                    forgot password <a href="#"> click here</a>
+                </p>
+
+            </div>
+            <div class="btn-field">
+                <button type="button" id="forward buttton">
+                   Get Started
+                </button>
+            </div>
+            
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+        
+        const name = document.querySelector('input[name="name"]').value;
+        const email = document.querySelector('input[name="Email"]').value;
+        const password = document.querySelector('input[name="password"]').value;
+        
+        // Send the login request to the backend API endpoint
+        fetch("/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            password
+          })
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.error) {
+            // Display error message for incorrect credentials
+            alert(data.error);
+          } else {
+            // Redirect to the home page or quiz.html
+            window.location.href = "quiz.html";
+          }
+        })
+        .catch(error => {
+          console.error("Error:", error);
+          alert("An error occurred. Please try again.");
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
