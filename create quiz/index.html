@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Quiz</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Create Quiz</h1>
+    
+    <form id="quizForm" action="quiz.php" method="post">
+      <label for="numQuestions">Number of Questions:</label>
+      <input type="number" id="numQuestions" name="numQuestions" required>
+      
+      <label for="questionType">Type of Question:</label>
+      <select id="questionType" name="questionType">
+        <option value="multiple">Multiple Choice</option>
+        <option value="single">Single Choice</option>
+        <option value="trueFalse">True or False</option>
+      </select>
+      
+      <label for="questionLevel">Level of Quiz:</label>
+      <input type="radio" id="highLevel" name="questionLevel" value="high" required>
+      <label for="highLevel">High</label>
+      <input type="radio" id="mediumLevel" name="questionLevel" value="medium" required>
+      <label for="mediumLevel">Medium</label>
+      <input type="radio" id="lowLevel" name="questionLevel" value="low" required>
+      <label for="lowLevel">Low</label>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <img src="create_quiz2.jpg" alt="Create Quiz">
+
+  <script src="script.js"></script>
+</body>
+</html>
