@@ -1,0 +1,106 @@
+/* style2.css */
+/* .container {
+    /* Add your container styles here *
+  }
+  
+  .profile {
+    /* Add your profile section styles here *
+  }
+  
+  .create-quizzes {
+    /* Add your create quizzes section styles here *
+  }
+  
+  .created-quizzes {
+    /* Add your created quizzes section styles here *
+  } */
+  
+  .quiz-box {
+    /* Add your quiz box styles here */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .quiz-item {
+    /* Add your quiz item styles here */
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  /* .quiz-item h4 {
+    /* Add your quiz name styles here *
+  } */
+  
+
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* To create a circular profile picture */
+  }
+  
+  .profile-info {
+    margin-left: 20px; /* Adjust the spacing between picture and info */
+  }
+  
+
+
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Add padding as per your design */
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* To create a circular profile picture */
+    margin-right: 20px; /* Adjust the spacing between picture and user information */
+  }
+  
+  .username {
+    font-size: 24px; /* Adjust the font size as per your design */
+    font-weight: bold; /* Adjust the font weight as per your design */
+  }
+  
+  .user-email {
+    font-size: 16px; /* Adjust the font size as per your design */
+    color: #888; /* Adjust the color as per your design */
+  }
+  
+  .created-quizzes {
+    flex-grow: 1;
+    text-align: right;
+  }
+  
+  /* Style the "Create Quiz" button */
+  .create-quizzes {
+    text-align: right;
+  }
+  
+  .create-quiz-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Adjust the background color as per your design */
+    color: #fff; /* Adjust the text color as per your design */
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .create-quiz-link:hover {
+    background-color: #0056b3; /* Adjust the hover background color as per your design */
+  }
+  
