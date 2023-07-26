@@ -5,7 +5,7 @@
 </head>
 <body>
 <div class="bg-image">
-        <img src="background5.jpg" class = "image">
+    <img src="background5.jpg" class = "image">
     </div>
     <div class="login">
 
@@ -25,8 +25,7 @@ if (isset($_POST['username']))
         $msg = 'The Email you have entered is invalid, please try again.';
         echo $msg;
     }else{
-
-        $query = "INSERT INTO `users` (`username`, `password`, `Email`) VALUES ('$username', '$password', '$Email');"; 
+        $query = "INSERT INTO `users` (`username`, `Email`, `password`) VALUES ('$username', '$Email', '$password');"; 
         $result1 = mysqli_query($conn,$query);
 
         if($result1)

@@ -19,15 +19,16 @@ session_start();
 if (isset($_POST['username'])){
 
     $username = $_REQUEST['username'];
-	$password = ($_REQUEST['password']);
+	$password = $_REQUEST['password'];
    
-    $query = "SELECT * FROM `users` WHERE `username`='$username' and `password`='' + '$password'";
+    $query = "SELECT * FROM `users` WHERE `username`='$username' and `password`='$password'";
 	$result = mysqli_query($conn,$query) or die(mysqli_error($conn));
 	$rows = mysqli_num_rows($result);
         if($rows==1){
-	    $_SESSION['username'] = $username;
+	    $_SESSION['username'] = $username ;
+
 	    header("Location: start.php");
-         }else{
+        }else{
 	echo "<div class='form'>
 <h3>Username/password is incorrect.</h3>
 <br/>Click here to <a href='index.php'>Login</a></div>";

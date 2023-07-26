@@ -1,0 +1,187 @@
+/* style2.css */
+/* .container {
+    /* Add your container styles here *
+  }
+  
+  .profile {
+    /* Add your profile section styles here *
+  }
+  
+  .create-quizzes {
+    /* Add your create quizzes section styles here *
+  }
+  
+  .created-quizzes {
+    /* Add your created quizzes section styles here *
+  } */
+  body{
+    background-image: url(http://sfwallpaper.com/images/blue-purple-background-15.jpg);
+    /* background-color: midnightblue; */
+  } 
+  .quiz-box {
+    /* Add your quiz box styles here */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .quiz-item {
+    /* Add your quiz item styles here */
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  /* .quiz-item h4 {
+    /* Add your quiz name styles here *
+  } */
+  
+
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 1000px; /* Adjust the size as needed */
+    height: 1000px; /* Adjust the size as needed */
+    border-radius: 50%; /* To create a circular profile picture */
+  }
+  
+  .profile-info {
+    margin-left: 40px; /* Adjust the spacing between picture and info */
+  }
+  
+
+
+
+  .container {
+    width:90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    color:black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(252, 250, 250, 0.1);
+    /* position: absolute; */
+    top: 150px;
+    left:450px;
+}
+
+.profile {
+    text-align: center;
+    color:white;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px auto;
+    object-fit: cover;
+}
+
+.username {
+    font-size: 24px;
+    color:black;
+    margin: 0;
+
+}
+
+.user-email {
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;
+}
+
+.quiz-scores {
+    margin-top: 20px;
+}
+
+.scores-list {
+    list-style: none;
+    padding: 0;
+}
+
+.scores-list li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* padding: 20px; Add padding as per your design */
+  /* } */
+  
+  .profile {
+    /* display: flex; */
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
+    border-radius: 50%; /* To create a circular profile picture */
+    margin-right: 20px; /* Adjust the spacing between picture and user information */
+  }
+  
+  .username {
+    font-size: 24px; /* Adjust the font size as per your design */
+    font-weight: bold;
+    padding:20px; /* Adjust the font weight as per your design */
+  }
+  
+  .user-email {
+    font-size: 16px; /* Adjust the font size as per your design */
+    color: #888; /* Adjust the color as per your design */
+  }
+  
+  .created-quizzes {
+    flex-grow: 1; 
+    text-align: right;
+  }
+  
+  /* Style the "Create Quiz" button */
+  .create-quizzes {
+    text-align: right;
+  }
+  
+  .create-quiz-link {
+    /* display: inline-block; */
+    padding: 10px 20px;
+    background-color: #007BFF; /* Adjust the background color as per your design */
+    color: #fff; /* Adjust the text color as per your design */
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .create-quiz-link:hover {
+    background-color: #0056b3; /* Adjust the hover background color as per your design */
+  }
+  .button2{
+    position: absolute;
+    width: 180px;
+    height: 52px;
+    padding: 8px 16px;
+    /* top: 525px; */
+    /* left:300px; */
+    font-family: 'David Libre' ;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 24px;
+    color: #db1fb3;
+    background-color: #fff;
+    border: 2px solid #db1fb3;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
